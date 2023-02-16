@@ -1,0 +1,33 @@
+.box{
+    position: relative;
+    border: 5px solid black;
+    width: 100px;
+    height: 100px;
+    transition: all 0.1s ease-in;
+    animation: toTheRight 1s 2s;
+/* @keyframes toTheRight{
+    0%{
+        left: 0;
+        top: 0;
+        width: 100px;
+        height: 100px;
+    }
+    50%{
+        left: 500px;
+        top: 500px;
+        background-color: aqua;
+        width: 300px;
+        height: 300px;
+        border-radius: 0%;
+    }
+    100%{
+        left: 1000px;
+        top: 0;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+} */
+.box:hover{
+    background-color: black;
+}

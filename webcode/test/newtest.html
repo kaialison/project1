@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+        }
+        li{
+            list-style: none;
+        }
+        .menu{
+            background-color: antiquewhite;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        ul.main-menu{
+            display: flex;
+        }
+        ul.main-menu>li{
+            position: relative;
+        }
+        ul.main-menu > li > a{
+            display: block;
+            line-height: 30px;
+            color: black;
+            padding: 0 30px;
+
+        }
+        li:hover{
+            background-color: rgb(32, 166, 166);
+        }
+        ul.main-menu  li  a:hover{
+            color: aliceblue;
+        }
+        ul.sub-menu{
+            min-height: 100px;
+            width: 1000px;
+            background-color: antiquewhite;
+            display: none;
+            position: absolute;
+            left: 0;
+        }
+        ul.sub-menu>li{
+            line-height: 30px;
+        }
+        ul.sub-menu > li > a{
+            display: block;
+            text-indent: 10px;
+        }
+        ul.main-menu >li:hover ul.sub-menu{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <ul class="main-menu">
+            <li><a href="">Choose 1</a>
+                <ul class="sub-menu">
+                    <li><a href="">sub 1</a></li>
+                    <li><a href="">sub 1</a></li>
+                    <li><a href="">sub 1</a></li>
+                    <li><a href="">sub 1</a></li>
+                    <li><a href="">sub 1</a></li>
+                </ul>
+            </li>
+            <li><a href="">Choose 2</a></li>
+            <li><a href="">Choose 3</a>
+                <ul class="sub-menu">
+                    <li><a href="">sub 1sdnf ejnfwenf sefncisefn djfncefn</a></li>
+                    <li><a href="">sub 1</a></li>
+                    <li><a href="">sub 1</a></li>
+                    <li><a href="">sub 1</a></li>
+                    <li><a href="">sub 1</a></li>
+                </ul>
+            </li>
+            <li><a href="">Choose 4</a></li>
+            <li><a href="">Choose 5</a></li>
+        </ul>
+    </div>
+</body>
+</html>

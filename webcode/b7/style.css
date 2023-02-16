@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(242, 242, 242);
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+    line-height: 40px;
+    display: block;
+
+}
+li{
+    list-style: none;
+}
+.line{
+    display: block;
+}
+.header-menu{
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.bars{
+    text-align: left;
+}
+ul.main-menu {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+}
+ul.main-menu > li{
+    float: left;
+    position: relative;
+}
+ul.main-menu > li > a{
+    padding: 0px 20px 0px 20px;
+}
+ul.submenu > li > a:hover,
+ul.main-menu > li > a:hover{
+    color: white;
+    background-color: #ddd;
+}
+ul.submenu {
+    background-color: white;
+    width: 200px;
+    min-height: 120px;
+    position: absolute;
+    box-shadow: 1px 1px 5px;
+    display: none;
+    border-radius: 10px;
+}
+ul.submenu > li > a{
+    text-indent: 15px;
+    display: block;
+    text-align: left;
+}
+ul.main-menu li:hover ul.submenu{
+    display: block;
+}
+.body-web{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.food-man{
+    margin-top: 70px;
+}
+.fm-text{
+    font-size: 30px;
+    display: block;
+    text-align: center;
+
+}
+.fm-pic > img{
+    width: 950px;
+    margin-top: 30px;
+    text-align: center;
+    filter: grayscale(0.6);
+}
+.fm-text2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    margin-top: 30px;
+    text-align: center;
+
+}
+.text3 {
+    font-size: 15px;
+    margin-bottom: 100px;
+    text-align: center;
+
+}
+.food{
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+.pic > img {
+    width: 300px;
+}
+.foodline1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.foodline2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.textlineup-in{
+    width: 300px;
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px;
+    display: block;
+    line-height: 30px;
+}
+.textlinelow-in{
+    width: 300px;
+    font-size: 18px;
+    font-family : system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 10px;
+    display: block;
+    line-height: 30px;
+}
+.foodline2{
+    margin-top:100px;
+}
+ul.number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul.number > li > a{
+    padding: 0px 20px 0px 20px;
+    display: block;
+}
+ul.number > li > a:hover{
+    background-color: black;
+    color: aliceblue;
+    border-radius: 50px;
+}
+.number-bar{
+    margin-bottom: 50px;
+}
+.main-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 100px;
+    text-align: left;
+}
+.header-menu{
+    display: flex;
+}
+.footer,
+.blogposts,
+.pop-tag{
+    width: 30%;
+}
+h3{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer > p{
+    font-size: 20px;
+    margin-top: 25px ;
+}
+.blog-line{
+   display: flex;
+}
+.blog-line > img{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+.blog-line{
+    margin-top: 30px;
+}
+.text-blog1{
+    font-size: 20px;
+    margin-bottom: 7x;
+}
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 25px;
+ 
+}
+.tag-text{
+    font-size: 16px;
+    background-color: #ccc;
+    padding: 2px 5px;
+    margin-bottom: 5px;
+}
+@media only screen and (max-width: 480px) {
+    ul.main-menu{
+        flex-direction: column;
+        min-height: 160px;
+        text-align: left;
+        display: none;
+    }
+    .bars{
+        display: block;
+    }
+    ul.submenu{
+        width: 100%;
+    }
+    ul.submenu > li > a {
+        font-size: 15px;
+    }
+    .body-web{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .fm-text{
+        width: 100%;
+    }
+    .fm-pic > img{
+        width: 100%;
+    }
+    .foodline1,
+    .foodline2{
+        flex-direction: column;
+    }
+    .pic > img,
+    .textlineup-in,
+    .textlinelow-in {
+        width: 100%;
+    }
+    .foodline2{
+        margin-top: 0%;
+    }
+    .footer,
+    .blogposts,
+    .pop-tag{
+    width: 100%;
+    margin-bottom: 50px;
+}
+    .main-footer{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#check-bar:checked ~ .main-menu{
+    display: block ;
+}
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .body-web{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .fm-text{
+        width: 100%;
+    }
+    .fm-pic > img{
+        width: 100%;
+    }
+    .line{
+        width: 40%;
+    }
+    .foodline1,
+    .foodline2{
+        justify-content: space-around;
+    }
+    .foodline2{
+        margin-top: 0%;
+    }
+    ul.main-menu{
+        justify-content: center;
+        align-items: center;
+    }
+    .footer{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .blogposts,
+    .pop-tag{
+    width: 45%;
+    margin-bottom: 50px;
+}
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .fm-pic > img{
+        width: 100%;
+    }
+}

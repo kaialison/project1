@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Input String: <input type="text" id="in"><br>
+    How Many???: <input type="text" id="out1"><br>
+    Exact String: <input type="text" id="out2"><br>
+    <input type="button" value="Hit it" onclick="exact();">
+    <script>
+        function exact(){
+            var str = document.getElementById("in").value;
+                str = str.replace(/\s+/g, ' ');
+                str = str.trim();
+                var ustr = str.toUpperCase().split('');
+                str = str.toLowerCase().split('');
+                str[0] = ustr[0]; 
+                str = str.join('');
+                document.getElementById("out2").value = str;
+                var a = new Array;
+                a = str.split(' ');
+                document.getElementById("out1").value = a.length;
+        }
+    </script>
+</body>
+</html>

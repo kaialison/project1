@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body{
+    background-color: #f9f9f9;
+}
+.nav{
+    width: 100%;
+    line-height: 100px;
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+}
+.container{
+    margin: 0 100px;
+}
+.nav .container,
+.menu{
+    display: flex;
+}
+.menu > li{
+    position: relative;
+
+}
+.nav .container{
+    justify-content: space-between;
+}
+.logo img{
+    margin-top: 30px
+}
+.menu a{
+    padding: 0px 10px;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(27, 27, 27);
+    display: block;
+}
+.sub-menu{
+    position: absolute;
+    min-width: 200px;
+}
+ul.sub-menu > li > a{
+    display: block;
+    line-height: 40px;
+    font-size: 15px;
+    background-color: white;
+    text-indent: 15px;
+}
+ul.sub-menu{
+    display: none;
+}
+ul.menu li:hover > ul.sub-menu{
+    display: block;
+}
+ul.menu li a:hover{
+    color: rgb(62, 232, 232);
+}
+.header{
+    margin: 0 100px;
+    font-family: 'Noto Sans JP', sans-serif;
+    position: absolute;
+    top: 170px;
+    color: rgb(16, 16, 81);
+    display: flex;
+    justify-content: space-between;
+}
+.h-text1{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.h-text2{
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.start a{
+    color: #f9f9f9;
+    display: block;
+    background-color: rgb(56, 148, 219);
+    line-height: 45px;
+    text-align: center;
+    width: 160px;
+}
+.h-pic,
+.h-text{
+    width: 49%;
+}
+.h-pic img{
+    width: 100%;
+}
+.body-web{
+    position: absolute;
+    top: 650px;
+}

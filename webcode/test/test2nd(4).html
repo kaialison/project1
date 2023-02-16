@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" cellspacing="0">
+        
+        <tr>
+            <td>
+                Nhap String
+            </td>
+            <td class="nhap"><input type="text" id="in"></td>
+        </tr>
+        <tr>
+            <td>so ki tu chu cai:</td>
+            <td class="nhap"><input type="text" id="out"></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="reset" value="Try Again">
+                <input type="button" value="Hit it" onclick="tach();">
+            </td>
+        </tr>
+    </table>
+    <script>
+        function tach(){
+            var str = document.getElementById("in").value;
+           str = str.split('');
+           var count = 0;
+           for(i = 0; i < str.length; i++)
+           {
+            if(str[i] >= 'A' && str <= 'Z' || str[i] >= 'a' && str[i] <='z')
+            {
+                count++;
+            }
+           }
+           document.getElementById("out").value = count;
+        }
+    </script>
+</body>
+</html>

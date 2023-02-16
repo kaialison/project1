@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+.menu {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 171, 242);
+    margin: 50px auto;
+}
+.menu ul.boss>li {
+    list-style: none;
+    float: left;
+    position: relative;
+}
+.menu ul.boss>li>a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 0px 30px 0px 30px;
+    line-height: 50px;
+    display: block;
+}
+.menu ul.boss>li>a:hover{
+    background-color: rgb(148, 131, 245);
+    color: aliceblue;
+    transition: ease-in 0.10s;
+    -moz-transition: ease-in 0.10s;
+    -webkit-transition: ease-in 0.10s;
+}
+.menu ul.sub1 {
+    background-color:  rgb(255, 171, 242);
+    width: 300px;
+    min-height: 100px;
+    display: none;
+    position: absolute;
+    left: 0px;
+}
+.menu ul.sub1 li {
+    list-style: none;
+}
+.menu ul.sub1 li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    line-height: 50px;
+    text-indent: 10px;
+    border-top: 1px solid wheat;
+}
+.menu ul.boss li:hover>ul.sub1 {
+    display: block;
+}
+.menu ul.sub1 li a:hover {
+    background-color:  rgb(148, 131, 245);
+    color: rgb(255, 255, 255);
+    transition: ease-in 0.10s;
+    -moz-transition: ease-in 0.10s;
+    -webkit-transition: ease-in 0.10s;
+}
+.menu ul.sub1  ul.sub1 {
+    left: 300px;
+    margin-top: -45px;
+}

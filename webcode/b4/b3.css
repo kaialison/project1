@@ -1,0 +1,111 @@
+body {
+    border-style: dashed ;
+}
+.container {
+    text-align: center;
+}
+.text1 {
+    width: 100%;
+    height: 300px;
+    background-repeat: repeat-x;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-shadow: inset 50px 25px 200px black , inset -50px -25px 200px black ;
+    border-radius: 50px;
+    background-image: url(https://images.unsplash.com/photo-1658460199033-95eebc60c7cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60);
+}
+.text1in1 {
+    font-size: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: beige;
+}
+.text1in2 {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    opacity: 0.5;
+}
+.cross {
+    background-color: pink;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 50px;
+}
+.begin  {
+    display: flex;
+}
+.textcr {
+    margin-right: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-style: dotted;
+    border-radius: 50px;
+}
+.exit {
+    margin-left: 76.6%;
+    margin-right: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-style: dotted;
+    border-radius: 50px;
+}
+.bodyweb {
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+}
+.text2in1 {
+    font-size: 50px;
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-style: dashed;
+    background-color: bisque;
+}
+.text2in2 {
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(43, 38, 38);
+    border-style: groove ;
+    background-color: pink;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+.image1{
+    border-radius: 50%;
+    width: 3000px;
+    height: 270px;
+    border-style: double;
+    margin-right: 100px;
+    border-color: pink;
+    border-width: 20px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/191125_Taylor_Swift_at_the_2019_American_Music_Awards_%28cropped%29.png/330px-191125_Taylor_Swift_at_the_2019_American_Music_Awards_%28cropped%29.png);
+}
+.text3 {
+    display: flex;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+.p2 {
+    margin-top: 50px;
+}
+.picture {
+    display: flex ;
+   flex-wrap: wrap;
+   justify-content:space-between;
+   align-content: space-between;
+   margin-top: 50px;
+}
+.footer {
+    font-size: 20px;
+    width: 100%;
+    color: antiquewhite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-style: dashed;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+/* img {
+display: grid 33.333333333%;} */
